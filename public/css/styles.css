@@ -1,0 +1,111 @@
+/* Kyle Oakes, 2020 */
+
+body {
+    background-color:black;
+    color: #ddd;
+    font-size: 100%;
+    max-width: 100%;
+}
+
+header, main, nav, footer {
+    text-align: center;
+}
+
+header, nav a, footer {
+    background-color: black;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item {
+    padding: 10px;
+    margin: 10px;
+    background-color: #222;
+    border-radius: 10px;
+    max-width: 95%;
+    flex-basis: 45em;
+}
+
+hr {
+    border-color: #0a0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+a {
+    color: white;
+}
+
+nav {
+    padding: 3px;
+}
+
+nav a {    /* links within "nav" container */
+    padding:0.5em;
+    font-size: 1.7em;
+    text-decoration: none;    /* removes underline */
+    color: white;
+    border-radius: 10px;
+    margin: 1px;
+    
+    border-left: 1px gray solid;
+    border-right: 1px gray solid;
+}
+
+nav a:hover {
+    background-color: #030;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.7em;
+    transition: .5s; /* transition effect */
+}
+
+.nav-current {
+    background-color: #040;
+    color: #fff;
+    border: 1px green solid;
+}
+
+img {
+    max-width: 95%;
+}
+
+footer {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#footer-text {
+    color: #eee;
+    font-size: 0.8em;
+}
+
+h1 {
+     
+    /* I don't want to use the following font this time, */
+    /*  but left this here to remind myself how to do it */
+    /*  in the future. */
+    /*font-family: 'Pacifico', cursive;*/ 
+    
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+
+li {
+    text-align: left;
+}
+
+table {
+    border: 1px gray solid;
+    width: 100%;
+}
+
+td {
+    border: 1px gray solid;
+}
