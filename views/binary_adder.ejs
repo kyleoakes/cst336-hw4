@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs') %>
+        
+<br />
+
+<main>
+    
+    <div class="flex-container">
+        <div class="flex-item">
+            <figure>
+                <img src="img/full_adder.png" alt="image of a binary full adder circuit with NAND gates" />
+                <figcaption>One way of implementing a binary full adder by using NAND gates</figcaption>
+            </figure>
+        </div>
+        <div class="flex-item">
+            <p>A binary full adder has three inputs: A, B, and Carry-In. "A" is a bit from the first addend, and "B" is the correstponding bit from the second addend. Carry-In (Cin) is used to "carry in" a bit that's overflowed from adding the previous place value.  The Sum (S) output is true if an odd number of inputs are true, and false otherwise. Carry-Out (Cout) is true if there were exactly two true inputs, because 1 + 1 = 10, with a 0 in the 1s place and a 1 that needs to be carried out to the next place value.</p>
+            <p>Multiple 1-bit adder circuits can be connected by wiring the Cout output to the Cin input for the next bit. This is one way (though not the most efficient way) to create an adder circuit that can add binary numbers consisting of an arbitrary number of bits.</p>
+        </div>
+    </div>
+    
+</main>
+
+<%- include('partials/footer.ejs') %>

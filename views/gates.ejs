@@ -1,0 +1,98 @@
+<%- include('partials/header.ejs') %>
+        
+<br />
+
+<main>
+    
+    <div class="flex-container">
+        <div class="flex-item">
+            <figure>
+                <figcaption>Logic gate symbols</figcaption> 
+                <br />
+                <img src="img/lgates.gif" alt="diagram of logic gate symbols" />
+            </figure>
+        </div>
+        <div class="flex-item">
+            <p>Logic table for the basic logic gates</p>
+            <table>
+                <tr>
+                    <td>A Input</td>
+                    <td>B Input</td>
+                    <td>A AND B</td>
+                    <td>A OR B</td>
+                    <td>NOT A</td>
+                    <td>A NAND B</td>
+                    <td>A NOR B</td>
+                    <td>A XOR B</td>
+                    <td>A XNOR B</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="flex-item">
+            <p>The most basic logic gates are:</p>
+            <ul>
+                <li>AND: true when both inputs are true</li>
+                <li>OR: true when either or both inputs are true</li>
+                <li>NOT: true when its input is false</li>
+            </ul>
+            <p>AND, OR, and NOT gates are the most basic gates that can be used to form any other logic gates.</p>
+        </div>
+        <div class="flex-item">
+            <p>AND, OR, and NOT gates can be used in combination to contruct the following logic gates:</p>
+            <ul>
+                <li>NAND: formed by negating the output of an AND gate</li>
+                <li>NOR: formed by negating the output of an OR gate</li>
+                <li>NAND: formed by negating the output of an AND gate</li>
+                <li>XOR: "exclusive OR gate" outputs true when exactly one of its inputs is true. An XOR gate can be formed using an OR gate and a NAND gate which serve as the inputs for another OR gate... or it can be constructed with an AND gate with one input negated, and another AND gate with the other input negated, with both of the AND gates serving as the inputs for an OR gate.</li>
+            </ul>
+        </div>
+    </div>
+    
+</main>
+
+<%- include('partials/footer.ejs') %>
