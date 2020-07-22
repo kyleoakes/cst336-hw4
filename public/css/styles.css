@@ -109,3 +109,7 @@ table {
 td {
     border: 1px gray solid;
 }
+
+p {
+    text-align: center;
+}

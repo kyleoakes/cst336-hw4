@@ -18,6 +18,8 @@
   "homepage": "https://github.com/kyleoakes/cst336-hw4#readme",
   "dependencies": {
     "ejs": "^3.1.3",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "jquery": "^3.5.1"
   }
 }
